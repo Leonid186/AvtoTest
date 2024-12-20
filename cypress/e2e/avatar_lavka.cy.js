@@ -11,7 +11,7 @@ describe('Покупка аватара', function () {                         
          cy.get('.credit').type('4620869113632996');                     // вводим номер карты
          cy.get('.k_input_ccv').type('125');                             // вводим CVV карты
          cy.get('.k_input_date').type('1227');                           // вводим срок действия карты
-         cy.get('.k_input_name').type('LEONID ZORIN');                   // вводим имя владельца действия карты
+         cy.get('.k_input_name').type('USER_NAME');                   // вводим имя владельца действия карты
          cy.get('.pay-btn').click();                                     // нажимаем кнопку Оплатить
          cy.get('#cardnumber').type('56456');                         // вводим код подтверждения СМС
          cy.get('.payment__submit-button').click();                      // нажимаем кнопку Отправить
